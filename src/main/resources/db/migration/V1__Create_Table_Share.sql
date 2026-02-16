@@ -1,0 +1,5 @@
+CREATE TABLE share (
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  company VARCHAR(255) NOT NULL,
+  quantity INT NOT NULL CHECK (quantity >= 0)
+);
